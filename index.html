@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>😋¿Me das una salchipapa?🍴</title>
+    <style>
+        .body {
+            background-image: url(https://us.123rf.com/450wm/lovender/lovender1705/lovender170500061/77533876-patr%C3%B3n-cuadrado-violeta-fondo-de-vector-transparente-cuadrados-de-color-violeta-sobre-fondo-lavanda-.jpg?ver=6);
+            text-align: center;
+        }
+
+        .body__title {
+            font-size-adjust: initial;
+
+            font-family:fantasy;
+            -webkit-text-stroke: 1px rgb(103, 64, 177);
+            margin-top: 55px;
+            color: rgb(255, 255, 255)
+        }
+
+        .body__img {
+            width: 28%;
+            margin-top: 50px;
+        }
+    </style>
+
+</head>
+
+<body class="body">
+    <h1 class="body__title">😋¿Me das una salchipapa?🍴</h1>
+    <img src="https://www.antojosperuanos261.com/uploads/1/2/7/2/127243619/p675.png" alt="Foto salchipapa"
+        class="body__img">
+
+
+    <style>
+        .button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-decoration: none;
+            background: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            padding: 20px 20px;
+            font-size: 20px;
+            border-radius: 10px;
+            border-style: dotted;
+            border-color: rgb(103, 64, 177);
+        }
+
+        #sí {
+            top: 81%;
+            left: 40%;
+            transform: translateY(-50%) translateX(-20%);
+            text-align: center;
+        }
+
+        #no {
+            top: 81%;
+            left: 60%;
+            transform: translateY(-50%) translateX(-80%);
+            text-align: center;
+        }
+
+        .flip_letters {
+            position: relative;
+            text-align: center;
+            padding-left: 20%;
+            width: 100%;
+        }
+
+        .flip_letters span {
+            font-size: 40px;
+
+            color: #ffffff;
+            animation: flip 2s infinite;
+            animation-delay: calc(.2s * var(--flip));
+        }
+    </style>
+
+    <a href="#" name="acepto" class="button" id="sí">Sí 😇</a>
+    <a href="#" class="button" id="no">No 😭</a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        let sí = document.getElementById('sí');
+        sí.addEventListener("click", function (e) {
+
+            Swal.fire({
+                title: 'Custom width, padding, color, background.',
+                width: 600,
+                padding: '3em',
+                color: '#000000',
+                title: 'Síííí!!!! 🥰',
+                html: "Gracias por aceptar 😊",
+                confirmButtonText: "♡",
+                allowOutsideClick: false,
+                footer: '<a href="https://www.youtube.com/watch?v=8jOomvPnRZ8">Antes de irte escucha esto :3</a>',
+                background: '#fff url(https://thumbs.dreamstime.com/z/fondo-de-los-peque%C3%B1os-corazones-rojos-que-crean-un-modelo-ca%C3%B3tico-135581284.jpg)',
+                backdrop: `
+    rgba(255,99,71,0.2)
+    url("https://i.gifer.com/origin/56/5695ab0186b7ed8fd0a1ece35842139b_w200.gif")
+    bottom
+    no-repeat
+  `
+
+            })
+        })
+
+        let no = document.getElementById('no');
+        no.addEventListener("mousemove", function (e) {
+            let x = Math.round(Math.random() * 93);
+            let y = Math.round(Math.random() * 93);
+            no.style.left = x + "%";
+            no.style.top = y + "%";
+        });
+
+
+    </script>
+
+</body>
+
+</html>
